@@ -23,19 +23,23 @@ def calculate(first_number, second_number, operator):
 if __name__ == '__main__':
     print("This app is a super basic calculator.")
 
-    print("Enter the first number: ")
+    print("\nEnter the first number: ")
     first_number = int(input())
 
+    print("\n----")
+    print("----")
     print(" + for addition")
     print(" - for subtraction")
     print(" * for multiplication")
     print(" / for division")
+    print("----")
+    print("----\n")
     print("Enter an operator: ")
     operator = input()
 
-    print("Enter the second number: ")
+    print("\nEnter the second number: ")
     second_number = int(input())
 
     result = calculate(first_number, second_number, operator)
 
-    print(str(first_number) + ' ' + operator + ' ' + str(second_number) + ' = ' + str(result))
+    print('\n' + str(first_number) + ' ' + operator + ' ' + str(second_number) + ' = ' + str(result))
